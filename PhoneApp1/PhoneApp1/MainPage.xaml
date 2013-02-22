@@ -47,7 +47,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="81*"/>
+                <ColumnDefinition Width="86*"/>
+                <ColumnDefinition Width="61*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="This is text" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0" Grid.ColumnSpan="3" />
+            <Button Content="Click me" HorizontalAlignment="Right" Width="172" Height="80" VerticalAlignment="Bottom" Margin="0,0,0,45" Grid.Column="1" />
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
